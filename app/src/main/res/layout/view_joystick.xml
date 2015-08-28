@@ -2,10 +2,10 @@
     >
     <ImageView
         android:id="@+id/joystick_button_up"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/joystick_button_size"
         android:layout_height="wrap_content"
         android:layout_gravity="top|center_horizontal"
-        android:background="#ee3333"
+        android:adjustViewBounds="true"
         android:src="@drawable/joystick_up"
         />
     <ImageView
@@ -14,7 +14,6 @@
         android:layout_height="@dimen/joystick_button_size"
         android:layout_gravity="left|center_vertical"
         android:adjustViewBounds="true"
-        android:background="#ee3333"
         android:src="@drawable/joystick_left"
         />
     <ImageView
@@ -27,7 +26,7 @@
         />
     <ImageView
         android:id="@+id/joystick_button_down"
-        android:layout_width="wrap_content"
+        android:layout_width="@dimen/joystick_button_size"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|center_horizontal"
         android:adjustViewBounds="true"

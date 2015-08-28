@@ -7,7 +7,7 @@
     <sov4ik.alex.mirash.kitsunkasov4ik.joystick.JoystickView
         android:id="@+id/joystick"
         android:layout_width="@dimen/joystick_size"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/joystick_size"
         android:layout_gravity="left|bottom"
         android:background="#6b222332"
         />
