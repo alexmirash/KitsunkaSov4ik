@@ -1,6 +1,9 @@
 package sov4ik.alex.mirash.kitsunkasov4ik.joystick;
 
 import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.util.AttributeSet;
 
 import sov4ik.alex.mirash.kitsunkasov4ik.R;
@@ -25,6 +28,8 @@ public class JoystickView extends JoystickDirectionView {
 
     private JoystickStateListener mListener;
 
+    private Paint mCirclePaint;
+
     public JoystickView(Context context) {
         this(context, null);
     }
@@ -42,6 +47,18 @@ public class JoystickView extends JoystickDirectionView {
                 findViewById(R.id.joystick_button_up),
                 findViewById(R.id.joystick_button_down)
         );
+        mCirclePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mCirclePaint.setColor(Color.GRAY);
+        mCirclePaint.setStrokeWidth(1);
+        mCirclePaint.setStyle(Paint.Style.STROKE);
+        setWillNotDraw(false);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        float centre = getWidth() * 0.5f;
+        canvas.drawCircle(centre, centre, getWidth() * mDefaultAreaSizeRatio, mCirclePaint);
+        canvas.drawCircle(centre, centre, centre, mCirclePaint);
     }
 
     @Override
