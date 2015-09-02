@@ -1,4 +1,19 @@
 <resources>
     <dimen name="joystick_size">175dp</dimen>
     <dimen name="joystick_button_size">50dp</dimen>
+
+    <dimen name="map_hexagon_height">60dp</dimen>
+    <dimen name="map_hexagon_width">60dp</dimen>
+
+    <dimen name="map_top_level_offset">10dp</dimen>
+    <dimen name="map_between_hexagon_offset">5dp</dimen>
+    <dimen name="map_columns_padding">15dp</dimen>
+    <dimen name="map_columns_padding_left">5dp</dimen>
+
+
+    <!-- good -->
+    <dimen name="hexagon_background_side_margin">10dp</dimen>
+    <dimen name="hexagon_background_initial_top_margin">30dp</dimen>
+    <dimen name="hexagon_background_hexagon_side_size">45dp</dimen>
+    <dimen name="hexagon_background_hexagon_between_min_margin">1dp</dimen>
 </resources>

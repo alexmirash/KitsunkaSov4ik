@@ -2,8 +2,8 @@
              xmlns:tools="http://schemas.android.com/tools"
              android:layout_width="match_parent"
              android:layout_height="match_parent"
-             tools:context=".MainActivity"
              android:background="#CCFFFF"
+             tools:context=".MainActivity"
     >
     <sov4ik.alex.mirash.kitsunkasov4ik.joystick.JoystickView
         android:id="@+id/joystick"

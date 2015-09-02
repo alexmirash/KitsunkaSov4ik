@@ -1,6 +1,8 @@
 package sov4ik.alex.mirash.kitsunkasov4ik.utils;
 
 import android.app.Activity;
+import android.content.Context;
+import android.os.Vibrator;
 import android.view.Window;
 import android.view.WindowManager;
 
@@ -24,5 +26,10 @@ public final class SovkaUtils {
         float dx = x1 - x2;
         float dy = y1 - y2;
         return (float) Math.sqrt(dx * dx + dy * dy);
+    }
+
+    public static void vibrate(Context context, long vibrationTime) {
+        Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+        vibrator.vibrate(vibrationTime);
     }
 }
